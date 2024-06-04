@@ -1,0 +1,203 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 29 Nov 2023, 21:53:59
+    Author     : Boas
+*/
+
+.top-form{
+    -fx-background-color:#fff;
+    -fx-border-color:#000;
+    -fx-border-width: .2px .2px .4px .2px;
+}
+.close{
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-cursor:hand; 
+}
+.close:hover{
+    -fx-background-color: #dadada;
+}
+.minimize{
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-cursor: hand;
+}
+.minimize:hover{
+    -fx-background-color:#dadada;
+}
+
+.nav-form{
+    -fx-background-color:linear-gradient(to top , #00fff4 ,#6D96DE,#5100ff);
+}
+.nav-btn{
+    -fx-background-color:black;
+      -fx-background-radius: 0px 50px 50px 0px;
+      -fx-border-color: red;
+      -fx-border-radius: 0px 50px 50px 0px;
+      -fx-border-width: 0px 0px 0px 4px;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size:17px;
+    -fx-border-width: 3px 0px 0px 0xp;
+}
+.nav-btn:hover{
+    -fx-background-color:red;
+      -fx-background-radius: 0px 50px 50px 0px;
+      -fx-border-color: white;
+      -fx-border-radius: 0px 50px 50px 0px;
+      -fx-border-width: 0px 0px 0px 4px;
+    -fx-cursor: hand;
+    -fx-text-fill: black;
+    -fx-font-size:17px;
+}
+.logout{
+     -fx-background-color:black;
+    -fx-background-radius: 50;
+    -fx-border-radius:  50;
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size:17px;
+    -fx-border-width: 3px 0px 0px 0xp;
+}
+.logout:hover{
+     -fx-background-color: red;
+    -fx-background-radius: 50;
+    -fx-border-radius:  50;
+    -fx-cursor: hand;
+    -fx-text-fill: black;
+    -fx-font-size:17px;
+}
+.bg-white{
+    -fx-background-color: #fff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,3),8,0,0,0);
+    -fx-background-radius: 8px;
+}
+.bg-white:hover{
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,5),8,0,0,0);
+}
+.card1{
+    -fx-background-color: linear-gradient(to right, #2b428c,#2e58ab);
+    -fx-background-radius: 0px 10px 10px 0px;
+}
+.card1-left{
+   -fx-background-color: linear-gradient(to right, #213778,#2b428c);
+}
+.card-left:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5),5,0,0,0);
+}
+
+.card2{
+    -fx-background-color: linear-gradient(to right, #772d90,#a42fb8);
+    -fx-background-radius: 0px 10px 10px 0px;
+}
+.card2-left{
+   -fx-background-color: linear-gradient(to right, #641f7f,#772d90);
+}
+.card2-left:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5),5,0,0,0);
+}
+
+.card3{
+    -fx-background-color: linear-gradient(to right, #9d2249,#cc1c5a);
+    -fx-background-radius: 0px 10px 10px 0px;
+}
+.card3-left{
+   -fx-background-color: linear-gradient(to right, #891a41,#9d2249);
+}
+.card3-left:hover{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5),5,0,0,0);
+}
+
+/*add*/
+.add-textfield{
+    -fx-background-color:#fff;
+    -fx-background-radius: 0px 5px 0px 0px;
+    -fx-border-color: #1e242e;
+    -fx-border-width: 1px;
+    -fx-border-radius: 0px 5px 0px 0px;
+    -fx-font-size:14px; 
+}
+.add-textfield:focus{
+    -fx-border-color: #ae2d3c;
+    -fx-border-width: 1.5px;
+}
+.insert-btn{
+    -fx-background-color: #3149a1;
+    -fx-background-radius: 8px;
+    -fx-text-fill: #fff;
+    -fx-font-size:14px; 
+    -fx-cursor: hand;
+}
+.insert-btn:hover{
+    -fx-background-color: #3ea185;
+}
+
+.update-btn{
+    -fx-background-color: #337254;
+    -fx-background-radius: 8px;
+    -fx-text-fill: #fff;
+    -fx-font-size:14px; 
+    -fx-cursor: hand;
+}
+.update-btn:hover{
+    -fx-background-color: #3ea185;
+}
+
+.delete-btn{
+    -fx-background-color: #962934;
+    -fx-background-radius: 8px;
+    -fx-text-fill: #fff;
+    -fx-font-size:14px; 
+    -fx-cursor: hand;
+}
+.delete-btn:hover{
+    -fx-background-color: #3ea185;
+}
+
+.clear-btn{
+    -fx-background-color: #933b80;
+    -fx-background-radius: 8px;
+    -fx-text-fill: #fff;
+    -fx-font-size:14px; 
+    -fx-cursor: hand;
+}
+.clear-btn:hover{
+    -fx-background-color: #3ea185;
+}
+
+.search{
+    -fx-background-color:  #fff;
+    -fx-border-color:black;
+    -fx-border-width: 1px;
+    -fx-font-size:14px; 
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-padding:0px 0px 0px 30px;
+}
+.search:focused{
+    -fx-border-color: #ae2d3c;
+    -fx-border-width: 2px;
+}
+.table-view .column-header-background{
+   -fx-background-color:linear-gradient(to top , #00fff4 ,#6D96DE,#5100ff);
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 10px 0px 0px 0px;
+}
+.table-view{
+    -fx-background-color: #fff;
+    -fx-background-radius: 10px;
+    -fx-border-color: black;
+    -fx-border-radius: 10px;
+    -fx-fill: #fff;
+}
+.table-view .column-header ,.table-view .filler{
+   -fx-background-color:transparent;
+   -fx-size:50px;
+   -fx-fill: #fff;
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: #fff;
+}
