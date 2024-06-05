@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" stylesheets="@../admin/adminMainForm.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <AnchorPane prefHeight="0.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutY="-86.0" prefHeight="132.0" prefWidth="1100.0" styleClass="top-form" stylesheets="@../admin/adminMainForm.css">
+               <children>
+                  <Button layoutX="1028.0" layoutY="91.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="23.0" textAlignment="CENTER">
+                     <graphic>
+                        <FontAwesomeIcon glyphName="CLOSE" size="1.2em" text="       " wrappingWidth="41.31428527832031" />
+                     </graphic></Button>
+                  <Button layoutX="989.0" layoutY="91.0" mnemonicParsing="false" prefWidth="39.0">
+                     <graphic>
+                        <FontAwesomeIcon glyphName="MINUS" />
+                     </graphic></Button>
+                  <Label layoutX="48.0" layoutY="95.0" text="Hotel " />
+                  <FontAwesomeIcon glyphName="HOTEL" layoutX="29.0" layoutY="107.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIcon glyphName="USER" layoutX="76.0" layoutY="88.0" size="5em" />
+            <Label layoutX="75.0" layoutY="107.0" text="Welcome" />
+            <Label layoutX="52.0" layoutY="124.0" text="YOUR USERNAME" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

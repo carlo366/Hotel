@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <AnchorPane prefHeight="0.0" prefWidth="1100.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="d" layoutY="-86.0" prefHeight="132.0" prefWidth="1100.0" styleClass="top-form" stylesheets="@adminMainForm.css">
+               <children>
+                  <Button layoutX="1051.0" layoutY="96.0" mnemonicParsing="false" styleClass="close" stylesheets="@adminMainForm.css">
+                     <graphic>
+                        <FontAwesomeIcon glyphName="CLOSE" text="  " wrappingWidth="20.428571701049805" />
+                     </graphic>
+                  </Button>
+                  <Button layoutX="997.0" layoutY="96.0" mnemonicParsing="false" onAction="" prefHeight="24.0" prefWidth="52.0" styleClass="minimize" stylesheets="@adminMainForm.css">
+                     <graphic>
+                        <FontAwesomeIcon glyphName="MINUS" styleClass="minimize" />
+                     </graphic>
+                  </Button>
+                  <Label layoutX="76.0" layoutY="95.0" text="Hotel">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIcon glyphName="HOTEL" layoutX="25.0" layoutY="114.0" size="2em" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="nav-form" stylesheets="@adminMainForm.css" BorderPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIcon fill="WHITE" glyphName="USER" layoutX="72.0" layoutY="76.0" size="6em" />
+            <Label layoutX="68.0" layoutY="86.0" text="Welcome" textFill="WHITE">
+               <font>
+                  <Font name="Agency FB Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameusername" layoutX="59.0" layoutY="111.0" text="ADMIN" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+               </font>
+            </Label>
+            <Button layoutY="151.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="189.0" styleClass="nav-btn" stylesheets="@adminMainForm.css" text="Dasboard">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="21.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="DASHBOARD" />
+               </graphic>
+            </Button>
+            <Button layoutX="14.0" layoutY="607.0" mnemonicParsing="false" styleClass="logout" stylesheets="@adminMainForm.css" text="LOGOUT">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="SIGN_OUT" text="" />
+               </graphic>
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="add_hotel_btn" layoutY="227.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="189.0" styleClass="nav-btn" stylesheets="@adminMainForm.css" text="TAMBAH HOTEL">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="PLUS" />
+               </graphic>
+            </Button>
+            <Button layoutX="-1.0" layoutY="304.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="189.0" styleClass="nav-btn" stylesheets="@adminMainForm.css" text="TAMBAH TIPE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="PLUS" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="add_hotel_form" layoutX="313.0" layoutY="227.0" prefHeight="654.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="628.0" prefWidth="258.0" styleClass="bg-white" stylesheets="@adminMainForm.css">
+                     <children>
+                        <Label layoutX="6.0" layoutY="121.0" text="No Kamar" />
+                        <TextField layoutX="78.0" layoutY="117.0" styleClass="add-textfield" stylesheets="@adminMainForm.css" />
+                        <Label layoutX="6.0" layoutY="159.0" text="Fasilitas" />
+                        <TextField layoutX="78.0" layoutY="155.0" styleClass="add-textfield" stylesheets="@adminMainForm.css" />
+                        <Label layoutX="6.0" layoutY="203.0" text="Tipe" />
+                        <Label layoutX="5.0" layoutY="286.0" text="Harga" />
+                        <Button layoutX="11.0" layoutY="346.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" styleClass="insert-btn" stylesheets="@../hotel/css.css" text="Insert" />
+                        <Button layoutX="177.0" layoutY="346.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" styleClass="delete-btn" stylesheets="@../hotel/css.css" text="Delete" />
+                        <TextField layoutX="76.0" layoutY="282.0" styleClass="add-textfield" stylesheets="@adminMainForm.css" />
+                        <Button layoutX="178.0" layoutY="390.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" styleClass="clear-btn" stylesheets="@../hotel/css.css" text="Clear" />
+                        <Button layoutX="93.0" layoutY="346.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" styleClass="update-btn" stylesheets="@../hotel/css.css" text="Update" />
+                        <ComboBox layoutX="77.0" layoutY="199.0" prefHeight="32.0" prefWidth="175.0" styleClass="add-textfield" stylesheets="@adminMainForm.css" />
+                        <Label layoutX="6.0" layoutY="245.0" text="Bungbed" />
+                        <ComboBox layoutX="77.0" layoutY="241.0" prefHeight="32.0" prefWidth="175.0" styleClass="add-textfield" stylesheets="@adminMainForm.css" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="287.0" layoutY="14.0" prefHeight="628.0" prefWidth="604.0" styleClass="bg-white" stylesheets="@adminMainForm.css">
+                     <children>
+                        <TableView fx:id="addHotel_tableview" layoutX="16.0" layoutY="58.0" prefHeight="557.0" prefWidth="572.0" stylesheets="@adminMainForm.css">
+                          <columns>
+                            <TableColumn fx:id="addHotel_colnokamar" prefWidth="91.0" text="Nomor Kamar" />
+                            <TableColumn fx:id="addHotel_colfasilitas" prefWidth="146.0" text="Fasilitas" />
+                              <TableColumn fx:id="addHotel_tipe" prefWidth="98.0" text="Tipe" />
+                              <TableColumn fx:id="addHotel_harga" prefWidth="131.0" text="Harga" />
+                              <TableColumn fx:id="addHotel_Bungbed" prefWidth="98.0" text="Bungbed" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
